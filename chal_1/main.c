@@ -13,14 +13,14 @@ void handler(int sig) {
     FILE *f = fopen("flag.txt", "r");
     
     printf("---------------------------------------\n");
-	printf("Detecting SIGSEGV signal! BOF!\n");
+    printf("Detecting SIGSEGV signal! BOF!\n");
     printf("---------------------------------------\n");
 
     fgets(buf, FLAGSIZE, f);
     printf(buf);
 
     fclose(f);
-	exit(0);
+    exit(0);
 }
 
 int main() {
